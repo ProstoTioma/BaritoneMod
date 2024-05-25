@@ -39,9 +39,7 @@ public class BaritoneMod implements ModInitializer {
             dispatcher.register(literal("start")
                     .executes(context -> {
                         context.getSource().sendFeedback(() -> Text.literal("Starting..."), false);
-                        ParseResults<ServerCommandSource> setResults = dispatcher.parse("setBaritoneSettings", context.getSource());
                         ParseResults<ServerCommandSource> mine = dispatcher.parse("mine", context.getSource());
-                        dispatcher.execute(setResults);
                         dispatcher.execute(mine);
 
                         return 10;

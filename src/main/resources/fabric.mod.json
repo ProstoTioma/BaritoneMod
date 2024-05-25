@@ -17,9 +17,6 @@
 	"entrypoints": {
 		"main": [
 			"com.baritone.BaritoneMod"
-		],
-		"client": [
-			"com.baritone.ExampleModClient"
 		]
 	},
 	"mixins": [
